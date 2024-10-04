@@ -14,10 +14,10 @@
 <script lang="ts" setup>
 import { ref } from 'vue';
 
-const props = defineProps({
-    value:{type:Number, required:true},
+const props = defineProps<{
+    value:number;
+}>();
 
-})
 const contador =ref(props.value);
 
 console.log("Hola Mundo");
