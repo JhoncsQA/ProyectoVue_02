@@ -6,6 +6,7 @@
     <Mycounter :value="25"/>
     <Mycounter02 :value="4"/>
     <Mycounter03 :value="8"/>
+    
 
 </template>
 
@@ -16,3 +17,18 @@ import Mycounter03 from './Components/MiCounter03.vue';
 
 </script>
 
+<script setup>
+import { useMouse } from './composable.js';
+
+const { x, y } = useMouse()
+
+
+</script>
+
+
+
+<script setup>
+import { useFetch } from './fetch.js'
+
+const { data, error } = useFetch('...')
+</script>

@@ -5,7 +5,7 @@
     <h3>Cuadrado: {{ contador*contador }}</h3>
 
     <div>
-        <button @click="contador++">+1</button>
+        <button @click="contador++" class="btn-custom btnn-primary">+1</button>
         <button @click="contador--">-1</button>
     </div>
 
@@ -13,6 +13,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue';
+
 
 const props = defineProps<{
     value:number;
