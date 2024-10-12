@@ -1,4 +1,3 @@
-// useCounter.ts
 import { ref } from 'vue';
 
 export function useSumar(initialValue) {
