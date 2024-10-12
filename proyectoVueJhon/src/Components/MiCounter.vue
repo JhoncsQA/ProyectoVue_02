@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1 class="title">Hola Mundo</h1>
+        <h1 class="title">Container 01</h1>
         <h3 class="counter">Contador: {{ contador }}</h3>
         <h3 class="square">Cuadrado: {{ contador * contador }}</h3>
 
