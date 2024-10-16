@@ -1,14 +1,14 @@
-// mouse.js
+// mouse.ts
 import { ref, onMounted, onUnmounted } from 'vue'
 
 // by convention, composable function names start with "use"
 export function useMouse() {
   // state encapsulated and managed by the composable
-  const x = ref(0)
-  const y = ref(0)
+  const x = ref<number>(0)
+  const y = ref<number>(0)
 
   // a composable can update its managed state over time.
-  function update(event) {
+  function update(event: MouseEvent): void {
     x.value = event.pageX
     y.value = event.pageY
   }
